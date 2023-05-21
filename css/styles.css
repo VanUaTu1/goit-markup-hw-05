@@ -120,6 +120,10 @@ p {
     color: var(--color-ocean);
 }
 
+.header .list .link.underline {
+    color: var(--color-ocean);
+}
+
 .underline::after {
     content: '';
     position: absolute;
@@ -128,7 +132,6 @@ p {
     height: 4px;
     width: 100%;
     background-color: var(--color-ocean);
-    color: var(--color-ocean);
     border-radius: 2px;
 }
 
