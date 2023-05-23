@@ -705,7 +705,8 @@ p {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -10%);
+    opacity: 0;
 }
 
 .modal {
@@ -718,8 +719,9 @@ p {
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    opacity: 1;
 
-    transition: transform var(--standart-anim);
+    transition: transform 350ms ease 150ms, opacity 300ms linear 150ms;
 }
 
 .modal-close-btn {
