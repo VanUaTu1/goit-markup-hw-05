@@ -206,6 +206,8 @@ p {
     color: var(--color-white);
     border: none;
     border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -388,6 +390,8 @@ p {
     height: 100%;
     background-color: var(--color-iris);
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-section-link:hover,
@@ -438,6 +442,9 @@ p {
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
     color: var(--color-light-slate);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -491,6 +498,8 @@ p {
     background-color: var(--color-iris);
     color: var(--color-cloud);
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
