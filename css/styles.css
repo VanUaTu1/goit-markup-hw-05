@@ -60,7 +60,7 @@ p {
 
 .header {
     position: fixed;
-    z-index: 5;
+    z-index: 2;
     top: 0;
     width: 100%;
     background-color: var(--color-white);
@@ -687,6 +687,7 @@ p {
     display: none;
 
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
