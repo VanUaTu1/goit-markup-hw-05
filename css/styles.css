@@ -712,7 +712,7 @@ p {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -35%) scale(0.1);
+    transform: translate(-50%, -35%) scale(0);
     opacity: 0;
 }
 
@@ -722,14 +722,15 @@ p {
     top: 50%;
     left: 50%;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
 
-    transition: transform 350ms ease 150ms,
-        opacity 300ms linear 150ms;
+    transition: transform var(--standart-anim),
+        opacity var(--standart-anim);
+    transition-delay: 150ms;
 }
 
 .modal-close-btn {
