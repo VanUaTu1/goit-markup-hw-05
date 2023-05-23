@@ -698,8 +698,8 @@ p {
     opacity: 1;
     visibility: visible;
 
-    transition: opacity var(--standart-anim),
-        visibility var(--standart-anim);
+    transition: opacity cubic-bezier(0.4, 0, 0.2, 1),
+        visibility cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -707,7 +707,7 @@ p {
     visibility: hidden;
     pointer-events: none;
 
-    transition-delay: 250ms;
+    /* transition-delay: 250ms; */
 }
 
 .backdrop.is-hidden .modal {
@@ -727,8 +727,8 @@ p {
     border-radius: 4px;
     opacity: 1;
 
-    transition: transform var(--standart-anim),
-        opacity var(--standart-anim);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1),
+        opacity cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 150ms; */
 }
 
@@ -747,8 +747,8 @@ p {
     justify-content: center;
     align-items: center;
     padding: 0;
-    transition: border var(--standart-anim),
-        background-color var(--standart-anim);
+    transition: border cubic-bezier(0.4, 0, 0.2, 1),
+        background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -761,5 +761,5 @@ p {
 .modal-close-icon {
     fill: var(--color-navy-blue);
 
-    transition: fill var(--standart-anim);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1);
 }
