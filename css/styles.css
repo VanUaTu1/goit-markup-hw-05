@@ -758,6 +758,11 @@ p {
     border: none;
 }
 
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+    fill: var(--color-white);
+}
+
 .modal-close-icon {
     fill: var(--color-navy-blue);
 
