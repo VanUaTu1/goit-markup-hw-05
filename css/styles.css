@@ -729,7 +729,7 @@ p {
 
     transition: transform var(--standart-anim),
         opacity var(--standart-anim);
-    transition-delay: 150ms;
+    /* transition-delay: 150ms; */
 }
 
 .modal-close-btn {
