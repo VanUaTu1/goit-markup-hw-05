@@ -712,13 +712,13 @@ p {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -35%) scale(0.1);
     opacity: 0;
 }
 
 .modal {
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
     width: 408px;
@@ -728,7 +728,8 @@ p {
     border-radius: 4px;
     opacity: 1;
 
-    transition: transform 350ms ease 150ms, opacity 300ms linear 150ms;
+    transition: transform 350ms ease 150ms,
+        opacity 300ms linear 150ms;
 }
 
 .modal-close-btn {
