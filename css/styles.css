@@ -646,8 +646,8 @@ p {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
+.portfolio-link:hover .overlay-text,
+.portfolio-link:focus .overlay-text {
     transform: translateY(0%);
 }
 
@@ -662,9 +662,6 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(100%);
-
-    transition: transform var(--standart-anim);
 }
 
 .overlay-text {
@@ -679,9 +676,9 @@ p {
     letter-spacing: 0.02em;
     color: var(--color-cloud);
     background-color: var(--color-iris);
-    /* transform: translateY(100%); */
+    transform: translateY(100%);
 
-    /* transition: transform var(--standart-anim); */
+    transition: transform var(--standart-anim);
 }
 
 /**
