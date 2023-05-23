@@ -741,7 +741,6 @@ p {
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    color: var(--color-navy-blue);
     background-color: var(--color-cornflower);
 
     display: flex;
@@ -760,5 +759,7 @@ p {
 }
 
 .modal-close-icon {
-    fill: currentColor;
+    fill: var(--color-navy-blue);
+
+    transition: fill var(--standart-anim);
 }
