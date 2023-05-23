@@ -684,8 +684,6 @@ p {
 */
 
 .backdrop {
-    display: none;
-
     position: fixed;
     z-index: 3;
     top: 0;
@@ -715,13 +713,26 @@ p {
     border-radius: 50%;
     background-color: var(--color-cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--color-navy-blue);
 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+    transition: color var(--standart-anim),
+        background-color var(--standart-anim);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: var(--color-white);
+    background-color: var(--color-ocean);
 }
 
 .modal-close-icon {
-    fill: var(--color-navy-blue);
+    fill: currentColor;
+}
+
+.is-hidden {
+    display: none;
 }
