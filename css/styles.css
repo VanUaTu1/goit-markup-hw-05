@@ -130,6 +130,7 @@ p {
 .underline::after {
     content: '';
     position: absolute;
+    left: 0;
     bottom: -1px;
     display: block;
     height: 4px;
@@ -640,6 +641,7 @@ p {
 }
 
 .overlay {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -650,7 +652,6 @@ p {
 }
 
 .overlay-text {
-    /* display: none; */
     position: absolute;
     width: calc(100% - 64px);
     font-weight: 400;
