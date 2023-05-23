@@ -734,15 +734,16 @@ p {
 }
 
 .modal-close-btn {
+    cursor: pointer;
     position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    background-color: var(--color-cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     color: var(--color-navy-blue);
+    background-color: var(--color-cornflower);
 
     display: flex;
     justify-content: center;
@@ -756,6 +757,7 @@ p {
 .modal-close-btn:focus {
     color: var(--color-white);
     background-color: var(--color-ocean);
+    border: none;
 }
 
 .modal-close-icon {
